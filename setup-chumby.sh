@@ -1,6 +1,6 @@
 #!/bin/bash
 
-TOPDIR=${HOME}/oe
+TOPDIR=${HOME}/chumby-oe
 
 
 export BBPATH=${TOPDIR}/chumby:${TOPDIR}/openembedded
