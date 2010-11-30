@@ -1,0 +1,12 @@
+diff -ur src-stock/kernel/printk.c src/kernel/printk.c
+--- src-stock/kernel/printk.c	2010-11-19 03:36:34.954652089 +0000
++++ src/kernel/printk.c	2010-11-19 03:36:50.554649638 +0000
+@@ -35,7 +35,7 @@
+ 
+ #include <asm/uaccess.h>
+ 
+-//#define CHUMBY_EARLY_DEBUG
++#define CHUMBY_EARLY_DEBUG
+ 
+ 
+ /*

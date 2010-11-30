@@ -1,0 +1,12 @@
+diff -ur src-stock/include/configs/aspenite.h src/include/configs/aspenite.h
+--- src-stock/include/configs/aspenite.h	2010-11-22 19:27:20.348606529 +0000
++++ src/include/configs/aspenite.h	2010-11-22 19:28:24.328593861 +0000
+@@ -286,7 +286,7 @@
+             "rootwait console=ttyS0,115200 mem=128M "           \
+             "uart_dma sysrq_always_enabled "                    \
+             "brandnum=${brandnum} "                             \
+-            "ro logo.brand=${brand} ${RECOVERY} ;"              \
++            "rw logo.brand=${brand} ${RECOVERY} ;"              \
+     "echo \"Booting to ${PARTNAME}...\" ;"                      \
+     " ;"                                                        \
+     /* Load the kernel from the config area */                  \

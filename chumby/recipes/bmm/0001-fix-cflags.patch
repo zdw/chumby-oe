@@ -1,0 +1,13 @@
+Binary files lib-stock/.Makefile.swp and lib/.Makefile.swp differ
+diff -ur lib-stock/Makefile lib/Makefile
+--- lib-stock/Makefile	2010-11-04 21:04:02.995893337 +0000
++++ lib/Makefile	2010-11-04 21:04:17.125891921 +0000
+@@ -46,7 +46,7 @@
+ 	${AR} -rcs $@ ${bmm_lib_obj}
+ 
+ libbmm.so: ${bmm_lib_obj}
+-	${CC} -g -s -shared -Wl,-soname,$@ -o $@ ${bmm_lib_obj}
++	${CC} -g ${CFLAGS} ${LDFLAGS} -s -shared -Wl,-soname,$@ -o $@ ${bmm_lib_obj}
+ 
+ install-host:
+ 	cp -f libbmm.so $(PXA_HOST_LIB_DIR)
