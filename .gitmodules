@@ -1,0 +1,3 @@
+[submodule "openembedded"]
+	path = openembedded
+	url = git://git.openembedded.org/openembedded
